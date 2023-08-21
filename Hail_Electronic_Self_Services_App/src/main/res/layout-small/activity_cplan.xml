@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFCFCF"
+    android:backgroundTint="#D3D3D3"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:textDirection="firstStrongRtl"
+    tools:context=".GradesUI">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="678dp"
+        android:layout_gravity="bottom"
+        android:fillViewport="true"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:background="#273377"
+                android:backgroundTint="#273377"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/HomeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="169dp"
+                        android:layout_marginEnd="170dp"
+                        android:backgroundTint="#273377"
+                        android:foregroundGravity="center"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="Home"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.473"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/baseline_home_white_24dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="63dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="Credit"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/credit"
+                app:layout_constraintEnd_toEndOf="@+id/credit"
+                app:layout_constraintStart_toStartOf="@+id/credit" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="63dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="Code"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/code66"
+                app:layout_constraintEnd_toStartOf="@+id/credit6"
+                app:layout_constraintStart_toEndOf="@+id/Subject6" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="234dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="Subject"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Subject6"
+                app:layout_constraintEnd_toEndOf="@+id/Subject6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject6" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="63dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="Credit"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/credit6"
+                app:layout_constraintEnd_toEndOf="@+id/credit6"
+                app:layout_constraintStart_toStartOf="@+id/credit6" />
+
+            <TextView
+                android:id="@+id/credit4"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/credit3"
+                app:layout_constraintTop_toBottomOf="@+id/credit3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit5"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/credit4"
+                app:layout_constraintTop_toBottomOf="@+id/credit4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit3"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/code6"
+                app:layout_constraintTop_toBottomOf="@+id/code2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit1"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/credit"
+                app:layout_constraintTop_toBottomOf="@+id/credit"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code8"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/code3"
+                app:layout_constraintTop_toBottomOf="@+id/code3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code6"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/code"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code5"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Subject5"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/code8"
+                app:layout_constraintStart_toStartOf="@+id/Subject4"
+                app:layout_constraintTop_toBottomOf="@+id/Subject4" />
+
+            <TextView
+                android:id="@+id/code4"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Subject4"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/code3"
+                app:layout_constraintStart_toStartOf="@+id/Subject3"
+                app:layout_constraintTop_toBottomOf="@+id/Subject3" />
+
+            <TextView
+                android:id="@+id/Subject3"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/code6"
+                app:layout_constraintStart_toStartOf="@+id/Subject2"
+                app:layout_constraintTop_toBottomOf="@+id/Subject2" />
+
+            <TextView
+                android:id="@+id/code2"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Subject2"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/code1"
+                app:layout_constraintStart_toStartOf="@+id/Subject1"
+                app:layout_constraintTop_toBottomOf="@+id/Subject1" />
+
+            <TextView
+                android:id="@+id/code1"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/credit"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/credit"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Subject1"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/Subject"
+                app:layout_constraintStart_toStartOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/Subject" />
+
+            <TextView
+                android:id="@+id/Subject"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="55dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit2"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/credit"
+                app:layout_constraintTop_toBottomOf="@+id/code1"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/credit10"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/credit3"
+                app:layout_constraintTop_toBottomOf="@+id/credit9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit11"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/credit10"
+                app:layout_constraintStart_toStartOf="@+id/credit10"
+                app:layout_constraintTop_toBottomOf="@+id/credit10" />
+
+            <TextView
+                android:id="@+id/credit9"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/code6"
+                app:layout_constraintTop_toBottomOf="@+id/credit8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit7"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/credit"
+                app:layout_constraintTop_toBottomOf="@+id/credit6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code80"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/code3"
+                app:layout_constraintTop_toBottomOf="@+id/code3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code10"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit6"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="92dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/code"
+                app:layout_constraintTop_toBottomOf="@+id/fr1266"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code11"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/subject11"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/code4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject4"
+                app:layout_constraintTop_toBottomOf="@+id/subject10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code44"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code3"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/code6"
+                app:layout_constraintTop_toBottomOf="@+id/code2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/subject10"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/code3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject3"
+                app:layout_constraintTop_toBottomOf="@+id/subject9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code9"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/code6"
+                app:layout_constraintTop_toBottomOf="@+id/code88"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/subject9"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/code2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject2"
+                app:layout_constraintTop_toBottomOf="@+id/Subject8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code88"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Subject8"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/code1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject1"
+                app:layout_constraintTop_toBottomOf="@+id/Subject7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code7"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/credit"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/code66"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Subject7"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="120dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/Subject"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/Subject6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Subject6"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/code5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject5"
+                app:layout_constraintTop_toBottomOf="@+id/Subject5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/code66"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginBottom="348dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/credit4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Subject"
+                app:layout_constraintTop_toBottomOf="@+id/fr1266"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/credit8"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:background="@drawable/tdr"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/credit"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/credit"
+                app:layout_constraintTop_toBottomOf="@+id/credit7"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <FrameLayout
+                android:id="@+id/fr1266"
+                android:layout_width="411dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="92dp"
+                android:background="#000000"
+                android:backgroundTint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/Subject6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/credit5"
+                app:layout_constraintVertical_bias="1.0">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="120dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:text="Level 2"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Subject6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject6"
+                app:layout_constraintTop_toBottomOf="@+id/fr1266"
+                app:layout_constraintVertical_bias="0.016" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="95dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginBottom="50dp"
+                android:text="Level 1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Subject"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="234dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="Subject"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Subject"
+                app:layout_constraintEnd_toEndOf="@+id/Subject"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Subject" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="63dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="Code"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/code"
+                app:layout_constraintEnd_toStartOf="@+id/credit"
+                app:layout_constraintStart_toEndOf="@+id/Subject" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

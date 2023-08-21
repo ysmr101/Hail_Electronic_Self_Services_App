@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFCFCF"
+    android:backgroundTint="#D3D3D3"
+    android:orientation="vertical"
+    android:textDirection="firstStrongRtl"
+    tools:context=".PersonalProfileUI">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="678dp"
+        android:layout_gravity="bottom"
+        android:fillViewport="true"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:background="#273377"
+                android:backgroundTint="#273377"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/HomeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="169dp"
+                        android:layout_marginEnd="170dp"
+                        android:backgroundTint="#273377"
+                        android:foregroundGravity="center"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="Home"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.473"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/baseline_home_white_24dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/MajorText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#0B0A0A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/emailText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/emailText"
+                app:layout_constraintTop_toBottomOf="@+id/info8" />
+
+            <TextView
+                android:id="@+id/info8"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:text="Major:"
+                android:textColor="#020202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/info5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/info5"
+                app:layout_constraintTop_toBottomOf="@+id/SalaryText" />
+
+            <TextView
+                android:id="@+id/SalaryText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#0B0A0A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/emailText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/emailText"
+                app:layout_constraintTop_toBottomOf="@+id/info7" />
+
+            <TextView
+                android:id="@+id/info7"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:text="Salary:"
+                android:textColor="#020202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/info5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/info5"
+                app:layout_constraintTop_toBottomOf="@+id/ageText" />
+
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#0B0A0A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/emailText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/emailText"
+                app:layout_constraintTop_toBottomOf="@+id/info6" />
+
+            <TextView
+                android:id="@+id/info6"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:text="age:"
+                android:textColor="#020202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/info5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/info5"
+                app:layout_constraintTop_toBottomOf="@+id/IDText" />
+
+            <TextView
+                android:id="@+id/IDText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#0B0A0A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/emailText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/emailText"
+                app:layout_constraintTop_toBottomOf="@+id/info5" />
+
+            <TextView
+                android:id="@+id/info5"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:text="ID:"
+                android:textColor="#020202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/info3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/info3"
+                app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#0B0A0A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/STDIDText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/STDIDText"
+                app:layout_constraintTop_toBottomOf="@+id/info4" />
+
+            <TextView
+                android:id="@+id/info4"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:text="email:"
+                android:textColor="#020202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/info3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/info3"
+                app:layout_constraintTop_toBottomOf="@+id/phneNumberText" />
+
+            <TextView
+                android:id="@+id/info3"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:text="Phone number:"
+                android:textColor="#020202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/info1"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/info1"
+                app:layout_constraintTop_toBottomOf="@+id/STDIDText" />
+
+            <TextView
+                android:id="@+id/phneNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#0B0A0A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/STDIDText"
+                app:layout_constraintStart_toStartOf="@+id/STDIDText"
+                app:layout_constraintTop_toBottomOf="@+id/info3" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#0B0A0A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info1" />
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="15dp"
+                android:text="Name:"
+                android:textColor="#020202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+                app:layout_constraintVertical_bias="0.024" />
+
+            <TextView
+                android:id="@+id/STDIDText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#0B0A0A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/nameText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/nameText"
+                app:layout_constraintTop_toBottomOf="@+id/info2" />
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:text="Student ID:"
+                android:textColor="#020202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/info1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/info1"
+                app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

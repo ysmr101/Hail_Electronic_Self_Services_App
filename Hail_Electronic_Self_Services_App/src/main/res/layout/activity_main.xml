@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    android:textDirection="firstStrongRtl"
+    tools:context=".LogInUI">
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="295dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#273377"
+        android:onClick="Sign"
+        android:shadowColor="#000000"
+        android:text="LOG IN"
+        android:textColor="#F1EBEB"
+        android:textColorHighlight="#F1F1F1"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773"
+        app:rippleColor="@color/black"
+        app:strokeColor="#000000" />
+
+    <Button
+        android:id="@+id/Help"
+        android:layout_width="295dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#273377"
+        android:shadowColor="#000000"
+        android:text="Do you need help?"
+        android:textColor="#F1EBEB"
+        android:textColorHighlight="#F1F1F1"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855"
+        app:rippleColor="@color/black"
+        app:strokeColor="#000000" />
+
+    <TextView
+
+        android:id="@+id/WrongPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrong Password "
+        android:textColor="#ED0606"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <TextView
+        android:id="@+id/userDoseNotExist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Username dose not exist"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernamelay"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="120dp"
+        android:hint="Student number"
+        android:maxLength="26"
+        android:maxLines="1"
+        android:textColorHint="#000000"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeErrorColor="#000000"
+        app:counterOverflowTextColor="@color/purple_500"
+        app:counterTextColor="@color/black"
+        app:errorTextColor="#000000"
+        app:helperTextTextColor="#000000"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/signIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WrongPassWord"
+        app:layout_constraintVertical_bias="1.0"
+        app:placeholderTextColor="#000000"
+        app:prefixTextColor="#000000"
+        app:suffixTextColor="#040000">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/userName"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="26"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passlay"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="57dp"
+        android:hint="Password"
+        android:maxLength="26"
+        android:maxLines="1"
+        android:textColorHint="#000000"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeErrorColor="#000000"
+        app:counterTextColor="@color/black"
+        app:errorTextColor="#000000"
+        app:helperTextTextColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/signIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernamelay"
+        app:layout_constraintVertical_bias="0.882"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#000000"
+        app:placeholderTextColor="#000000"
+        app:prefixTextColor="#000000"
+        app:suffixTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/passWord"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:maxLength="26"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            app:hintTextColor="#000000" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/welcomeMsg"
+        android:layout_width="356dp"
+        android:layout_height="122dp"
+        android:gravity="center"
+        android:text="Welcome to\nElectronic Services for \nUniversity of Hail"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="182dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Sign into your Account!"
+        android:textColor="#272727"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMsg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

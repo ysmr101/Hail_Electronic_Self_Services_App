@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    android:orientation="vertical"
+    android:textDirection="firstStrongRtl"
+
+
+    tools:context=".HomePageUI">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:fillViewport="true"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivityUI">
+
+            <FrameLayout
+                android:id="@+id/button_frame"
+                android:layout_width="338dp"
+                android:layout_height="193dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="420dp"
+                android:background="@drawable/layout_bg"
+                android:onClick="personalProfile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.051">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/IDTextView"
+                        android:layout_width="339dp"
+                        android:layout_height="38dp"
+                        android:background="#D8D8D8"
+                        android:backgroundTint="#273377"
+                        android:gravity="center"
+                        android:text="ID: 440016617"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.819" />
+
+                    <TextView
+                        android:id="@+id/textViewinfo1"
+                        android:layout_width="334dp"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:text="Personal profile"
+                        android:textColor="#273377"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="341dp"
+                        android:layout_height="40dp"
+                        android:background="#D8D8D8"
+                        android:backgroundTint="#273377"
+                        android:gravity="center"
+                        android:text="Name: Abdulkarim Ali Alluhaydan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.496" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/AttendanceRecord"
+                android:layout_width="158dp"
+                android:layout_height="141dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/layout_bg"
+                android:onClick="attendanceRecord"
+                app:layout_constraintBottom_toTopOf="@+id/CurriculumPlan"
+                app:layout_constraintEnd_toEndOf="@+id/Academicrecord"
+                app:layout_constraintStart_toStartOf="@+id/Academicrecord"
+                app:layout_constraintTop_toBottomOf="@+id/Academicrecord">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="159dp"
+                        android:layout_height="37dp"
+                        android:background="#D8D8D8"
+                        android:backgroundTint="#273377"
+                        android:gravity="center"
+                        android:text="Attendance Record"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#202020"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic"
+                        app:iconTint="#E6DFDF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/grades"
+                android:layout_width="158dp"
+                android:layout_height="141dp"
+                android:layout_marginStart="173dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/layout_bg"
+                android:onClick="Grades"
+                app:layout_constraintEnd_toEndOf="@+id/button_frame"
+                app:layout_constraintStart_toStartOf="@+id/button_frame"
+                app:layout_constraintTop_toBottomOf="@+id/button_frame">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="154dp"
+                        android:layout_height="38dp"
+                        android:background="#D8D8D8"
+                        android:backgroundTint="#273377"
+                        android:gravity="center"
+                        android:text="Review Grades"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#202020"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic"
+                        app:iconTint="#E6DFDF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.507" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Schedule"
+                android:layout_width="158dp"
+                android:layout_height="141dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/layout_bg"
+                android:onClick="schedule"
+                app:layout_constraintBottom_toTopOf="@+id/CurriculumPlan"
+                app:layout_constraintEnd_toEndOf="@+id/grades"
+                app:layout_constraintStart_toStartOf="@+id/grades"
+                app:layout_constraintTop_toBottomOf="@+id/grades">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="158dp"
+                        android:layout_height="38dp"
+                        android:background="#D8D8D8"
+                        android:backgroundTint="#273377"
+                        android:gravity="center"
+                        android:text="Schedule"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#202020"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic"
+                        app:iconTint="#E6DFDF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Academicrecord"
+                android:layout_width="158dp"
+                android:layout_height="141dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/layout_bg"
+                android:onClick="academicRecord"
+                app:layout_constraintEnd_toStartOf="@+id/grades"
+                app:layout_constraintTop_toBottomOf="@+id/button_frame">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="157dp"
+                        android:layout_height="39dp"
+                        android:background="#D8D8D8"
+                        android:backgroundTint="#273377"
+                        android:gravity="center"
+                        android:text="Academic Record"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#202020"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic"
+                        app:iconTint="#E6DFDF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/CurriculumPlan"
+                android:layout_width="338dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/layout_bg"
+                android:onClick="CPlan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="342dp"
+                        android:layout_height="39dp"
+                        android:background="#D8D8D8"
+                        android:backgroundTint="#273377"
+                        android:gravity="center"
+                        android:text="Curriculum Plan"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#373737"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic"
+                        app:iconTint="#E6DFDF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</LinearLayout>
